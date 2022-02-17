@@ -1,0 +1,13 @@
+.table__row {
+  padding: 1rem 0.75rem;
+}
+
+.table__row:hover {
+  background: #e6ebfb;
+  cursor: pointer;
+}
+
+.table__grid {
+  padding: 1rem 0;
+  text-align: center;
+}

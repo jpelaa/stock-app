@@ -1,0 +1,92 @@
+.modal__content-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: var(--zIndices-modal);
+  -webkit-box-pack: center;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: auto;
+}
+
+.modal__content {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  border-radius: var(--radii-md);
+  background: var(--colors-white);
+  color: inherit;
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem;
+  z-index: var(--zIndices-modal);
+  box-shadow: var(--shadows-lg);
+  max-width: var(--sizes-md);
+}
+
+.modal__header {
+  flex: 0 1 0%;
+  padding-inline-start: var(--space-6);
+  padding-inline-end: var(--space-6);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+  font-size: var(--fontSizes-xl);
+  font-weight: var(--fontWeights-semibold);
+}
+
+.modal__close-btn {
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: var(--close-button-size);
+  height: var(--close-button-size);
+  border-radius: var(--radii-md);
+  transition-property: var(--transition-property-common);
+  transition-duration: var(--transition-duration-normal);
+  --close-button-size: 32px;
+  font-size: 12px;
+  position: absolute;
+  top: var(--space-2);
+  right: var(--space-3);
+}
+.icon {
+  width: 1em;
+  height: 1em;
+  display: inline-block;
+  line-height: 1em;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  color: currentColor;
+  vertical-align: middle;
+}
+
+.modal__body {
+  padding-inline-start: var(--space-6);
+  padding-inline-end: var(--space-6);
+  padding-top: var(--space-2);
+  padding-bottom: var(--space-2);
+  flex: 1 1 0%;
+}
+
+.modal__footer {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
+  padding-inline-start: var(--space-6);
+  padding-inline-end: var(--space-6);
+  padding-top: var(--space-4);
+  padding-bottom: var(--space-4);
+}

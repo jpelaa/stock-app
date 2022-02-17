@@ -1,0 +1,7 @@
+.table {
+  width: 100%;
+}
+
+.table__header {
+  padding: 0.5rem 0.25rem;
+}
